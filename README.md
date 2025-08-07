@@ -25,23 +25,19 @@
 ### 1. **Task Scheduler**
 - **Daily Cron Job** 
 - **Redis Queue** for task management
-- **Simple Python script** with retry logic
-- **Cost monitoring** and daily limits
 
 ### 2. **Web Scraping Engine**
-- **Target Sources**: 8 major Bengali newspapers
+- **Target Sources**: All possible Bengali newspapers
 - **Scrapy Framework** with custom spiders
 - **Accident Keyword Filter** (pre-LLM screening)
 
 ### 3. **LLM Processing Pipeline**
-- **OpenAI GPT-4 Mini** (primary) + **Gemini Flash** (fallback)
+- **OpenAI GPT-4 Mini** or **Gemini Flash**
 - **Structured JSON output** with confidence scores
-- **Batch processing** (5 articles per API call)
-- **30-day result caching** in Redis
+- **Batch processing** (Specified amount of articles per API call)
 
 ### 4. **Data Storage**
-- **PostgreSQL** with daily partitioning
-- **JSON export** for external use
+- **PostgreSQL** for data store
 - **Automated backups** and cleanup
 
 ## Target News Sources
@@ -53,6 +49,7 @@
 6. **New Age** (newagebd.net)
 7. **Dhaka Tribune** (dhakatribune.com)
 8. **UNB News** (unb.com.bd)
+etc.
 
 
 ## Detailed Daily Workflow
