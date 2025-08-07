@@ -1,4 +1,4 @@
-# Bangladesh Accident News Scraper - Streamlined Architecture
+# Bangladesh Accident News Scraper - Architecture
 
 ## System Overview
 
